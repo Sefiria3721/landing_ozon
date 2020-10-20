@@ -196,6 +196,7 @@
     }
 
     .footer__tagline {
+        visibility: visible;
         display: inline;
         margin: 0;
         font-family: var(--main-font);
