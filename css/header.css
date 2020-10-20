@@ -1,0 +1,72 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes jelly{
+    0%{
+        transform: scale3d(1, 1, 1);
+    }
+    30%{
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40%{
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50%{
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65%{
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75%{
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100%{
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.logo{
+    background-image: url('../images/Logo.png');
+    height: 58px;
+    width:181px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: jelly;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+.nav{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+.nav__a{
+    font-size: 16px;
+    color:black;
+    text-decoration: none;
+    font-family: var(--main-font);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.logo_second{
+    font-size: 22px;
+    font-family: var(--main-font);
+}
+.nav_mobile{
+    display: none;
+}
+.adaptive_menu{
+    display: none;
+}
+.see_helper{
+    display: flex !important;
+    width: 50%;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
